@@ -9,7 +9,7 @@
 
 # Jak stworzyć własny kalkulator
 
-_Get started using GitHub in less than an hour._
+_Dowiesz się jak stworzyć własny kalkulator w CS!_
 
 </header>
 
