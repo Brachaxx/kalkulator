@@ -21,7 +21,7 @@ _Get started using GitHub in less than an hour._
   Encourage users to open new tabs for steps!
 -->
 
-## Step 1: Create a branch
+## Step 1: Odpal visual studio
 
 _Welcome to "Introduction to GitHub"! :wave:_
 
