@@ -21,7 +21,7 @@ _Dowiesz się jak stworzyć własny kalkulator w CS!_
   Encourage users to open new tabs for steps!
 -->
 
-## Step 1: Odpal visual studio
+## Step 1: Przygotowanie środowiska
 
 _Welcome to "Introduction to GitHub"! :wave:_
 
