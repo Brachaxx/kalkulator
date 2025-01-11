@@ -1,0 +1,78 @@
+using System;
+
+class Kalkulator
+{
+    static void Main()
+    {
+        Console.WriteLine("Witaj w kalkulatorze!");
+
+        bool kontynuuj = true;
+
+        while (kontynuuj)
+        {
+            // Wczytywanie liczb
+            Console.Write("Podaj pierwszą liczbę: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Podaj drugą liczbę: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            // Wybór operacji
+            Console.WriteLine("Wybierz operację:");
+            Console.WriteLine("1 - Dodawanie");
+            Console.WriteLine("2 - Odejmowanie");
+            Console.WriteLine("3 - Mnożenie");
+            Console.WriteLine("4 - Dzielenie");
+
+            int operacja = Convert.ToInt32(Console.ReadLine());
+
+            double wynik = 0;
+
+            // Obsługa operacji matematycznych
+            switch (operacja)
+            {
+                case 1:
+                    wynik = num1 + num2;
+                    Console.WriteLine("Wynik dodawania: " + wynik);
+                    break;
+
+                case 2:
+                    wynik = num1 - num2;
+                    Console.WriteLine("Wynik odejmowania: " + wynik);
+                    break;
+
+                case 3:
+                    wynik = num1 * num2;
+                    Console.WriteLine("Wynik mnożenia: " + wynik);
+                    break;
+
+                case 4:
+                    if (num2 != 0)
+                    {
+                        wynik = num1 / num2;
+                        Console.WriteLine("Wynik dzielenia: " + wynik);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Błąd: Nie można dzielić przez zero!");
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Niepoprawna operacja.");
+                    break;
+            }
+
+            // Sprawdzanie, czy użytkownik chce kontynuować
+            Console.Write("Czy chcesz wykonać kolejne obliczenia? (t/n): ");
+            string odpowiedz = Console.ReadLine();
+
+            if (odpowiedz.ToLower() != "t")
+            {
+                kontynuuj = false;
+            }
+        }
+
+        Console.WriteLine("Dziękujemy za skorzystanie z kalkulatora!");
+    }
+}
